@@ -1,0 +1,5 @@
+numpy==1.26.2
+pushbullet.py==0.12.0
+PyYaML==6.0.1
+requests~=2.31.0
+Pillow~=10.1.0

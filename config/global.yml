@@ -1,0 +1,3 @@
+push_bullet:
+    url: "https://api.pushbullet.com/v2"
+    api_key: <token>

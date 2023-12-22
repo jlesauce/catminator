@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "Catminator"
+version = "0.0.0"
+description = "Application used to detect cats in images."
+authors = ["Julien LE SAUCE <julien.le_sauce@nokia.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/jlesauce/catminator"
+repository = "https://github.com/jlesauce/catminator"
+keywords = ["catminator", "cat", "ai", "machine learning", "neural network"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Home Automation",
+    "Topic :: Utilities"
+]
+packages = [
+    { include = "catminator" },
+]
+include = [
+    "LICENSE", "Changelog.md"
+]
+
+[tool.poetry.scripts]
+catdetector = 'catminator.__main__:main'
+
+[tool.poetry.dependencies]
+numpy = "~=1.26.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
